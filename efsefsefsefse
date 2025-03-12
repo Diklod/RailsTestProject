@@ -1,0 +1,32 @@
+=> 
+[32m#<ActionMailer::MailDeliveryJob:0x00007f57ff4e68e0[0m
+ @_halted_callback_hook_called[32m=[0m[36m[1mnil[0m,
+ @arguments[32m=[0m
+  [[31m[1m"[0m[31mProductMailer[0m[31m[1m"[0m,
+   [31m[1m"[0m[31min_stock[0m[31m[1m"[0m,
+   [31m[1m"[0m[31mdeliver_now[0m[31m[1m"[0m,
+   {params:
+     {product:
+       [32m#<Product:0x00007f57ff42aa28[0m
+        id: [34m[1m2[0m,
+        name: [31m[1m"[0m[31mPants[0m[31m[1m"[0m,
+        created_at: [31m[1m"[0m[31m2025-03-10 13:33:10.123046000 +0000[0m[31m[1m"[0m,
+        updated_at: [31m[1m"[0m[31m2025-03-10 13:57:04.913323000 +0000[0m[31m[1m"[0m,
+        inventory_count: [36m[1mnil[0m[32m>[0m,
+      subscriber:
+       [32m#<Subscriber:0x00007f5808106870[0m
+        id: [34m[1m1[0m,
+        product_id: [34m[1m2[0m,
+        email: [31m[1m"[0m[31m[FILTERED][0m[31m[1m"[0m,
+        created_at: [31m[1m"[0m[31m2025-03-12 20:43:17.341976000 +0000[0m[31m[1m"[0m,
+        updated_at: [31m[1m"[0m[31m2025-03-12 20:43:17.341976000 +0000[0m[31m[1m"[0m[32m>[0m},
+    args: []}],
+ @exception_executions[32m=[0m{},
+ @executions[32m=[0m[34m[1m0[0m,
+ @job_id[32m=[0m[31m[1m"[0m[31m0ac7e134-ec8c-4e32-a091-72577fc71b90[0m[31m[1m"[0m,
+ @priority[32m=[0m[36m[1mnil[0m,
+ @provider_job_id[32m=[0m[31m[1m"[0m[31m4b5dde32-9f86-44a0-85d1-c64fc978f6f5[0m[31m[1m"[0m,
+ @queue_name[32m=[0m[31m[1m"[0m[31mdefault[0m[31m[1m"[0m,
+ @scheduled_at[32m=[0m[36m[1mnil[0m,
+ @successfully_enqueued[32m=[0m[36m[1mtrue[0m,
+ @timezone[32m=[0m[31m[1m"[0m[31mUTC[0m[31m[1m"[0m[32m>[0m
