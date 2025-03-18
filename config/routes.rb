@@ -3,8 +3,16 @@ Rails.application.routes.draw do
   resources :passwords, param: :token
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :products do
+    resources :reviews, only: [ :create ]
     resources :subscribers, only: [ :create ]
+    member do
+      post :checkout
+    end
+    post "checkout", to: "payments#create"
   end
+
+  get "checkout/success", to: "payments#success"
+  get "checkout/cancel", to: "payments#cancel"
 
   resource :unsubscribe, only: [ :show ]
 

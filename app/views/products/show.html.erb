@@ -17,3 +17,24 @@
     <% end %>
   </section>
 </section>
+
+<h2>Reviews</h2>
+<%= form_with model: [@product, Review.new], local: true do |form| %>
+  <p>
+    <%= form.label :rating %>
+    <%= form.number_field :rating, in: 1..5, value: 5 %>
+  </p>
+  <p>
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </p>
+  <%= form.submit "Submit Review" %>
+<% end %>
+
+<ul class= "reviews">
+  <% @product.reviews.each do |review| %>
+    <li><strong>Rating:</strong> <%= review.rating %> - <%= review.content %></li>
+  <% end %>
+</ul>
+
+<%= button_to "Buy Now", checkout_product_path(@product), method: :post %>
